@@ -1,35 +1,17 @@
-numero_secreto = 10
+numero_secreto = 67
 descrobriu = False
 
-if not descrobriu:
-    chute = int(input('Descubra o número!\nSeu chute: '))
-    if chute < numero_secreto:
-        print('Chute muito baixo!')
-    elif chute > numero_secreto:
-        print('Chute muito alto!')
-    else:
-        print('Descobriu!')
-        descrobriu = True
+for n in range(10):
+    if not descrobriu:
+        chute = int(input('Descubra um número de 0 a 100!\nSeu chute: '))
+        if chute < numero_secreto:
+            print('Chute muito baixo!')
+        elif chute > numero_secreto:
+            print('Chute muito alto!')
+        else:
+            print('Descobriu!')
+            descrobriu = True
 
-if not descrobriu:
-    chute = int(input('Descubra o número!\nSeu chute: '))
-    if chute < numero_secreto:
-        print('Chute muito baixo!')
-    elif chute > numero_secreto:
-        print('Chute muito alto!')
-    else:
-        print('Descobriu!')
-        descrobriu = True
-
-if not descrobriu:
-    chute = int(input('Descubra o número!\nSeu chute: '))
-    if chute < numero_secreto:
-        print('Chute muito baixo!')
-    elif chute > numero_secreto:
-        print('Chute muito alto!')
-    else:
-        print('Descobriu!')
-        descrobriu = True
 
 
 if descrobriu:
